@@ -16,10 +16,10 @@ public class WarriorTest {
         damage = beforeHp - slime.getHitPoint();
         return damage;
     }
-
+    @Test
     void attackTest(){
         for(int i = 0;i<3;i++){
-            assertEquals((int)(warriorAttack * 1.5), damage);
+            assertEquals((int)(warriorAttack * 1.5), attackDamege());
         }   
     }
 }
